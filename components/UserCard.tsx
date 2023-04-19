@@ -11,7 +11,7 @@ const UserCard: FunctionComponent<Props> = ({ user }) => {
     <Card style={{ width: "18rem" }} className="border-0 mb-5">
         <Card.Img
         variant="top"
-        src={user.avatar}
+        src={`${user.avatar}?w=100`}
         alt={`${user.first_name} ${user.last_name}`}
         style={{ borderRadius: "50%", width: "200px", height: "200px", objectFit: "cover" }}
         className="mx-auto"
