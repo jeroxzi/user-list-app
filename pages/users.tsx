@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import UserCard from "../components/UserCard";
 import getUsers, { User } from "./api/users";
+import Head from 'next/head';
 
 const PAGE_SIZE = 6;
 
@@ -42,6 +43,17 @@ const UsersPage = () => {
 
   return (
   <>
+    <Head>
+        <title>
+        Evelan User List
+        </title>
+        <meta
+          name="description"
+          content="User List of API https://reqres.in/"
+          key="desc"
+        />
+      </Head>
+  <h1 className='text-center mt-5 mb-5'>EVELAN USER LIST APP</h1>
   <Container className="text-center d-flex flex-column justify-content-center mt-5">
       <Row>
       {users &&

@@ -12,6 +12,7 @@ const UserCard: FunctionComponent<Props> = ({ user }) => {
         <Card.Img
         variant="top"
         src={user.avatar}
+        alt={`${user.first_name} ${user.last_name}`}
         style={{ borderRadius: "50%", width: "200px", height: "200px", objectFit: "cover" }}
         className="mx-auto"
       />
