@@ -36,11 +36,6 @@ const UsersPage = () => {
 
   const isLoadMoreDisabled = currentPage === totalPages;
 
-  console.log(
-    `Current page: ${currentPage}, Total pages: ${totalPages}, Users:`,
-    users
-  );
-
   return (
   <>
     <Head>
